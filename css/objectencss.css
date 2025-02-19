@@ -1,0 +1,586 @@
+:root{
+    --basiskleur:rgb(7, 79, 172);
+    --secondkleur:aqua;
+    --knopkleur:purple;
+    --pseudokleur: green;
+    --background:Radial-gradient( rgb(7, 79, 172), rgb(0, 0, 51));
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: black;
+    color: white;
+    border-color:  var(--basiskleur);
+    border-style: solid;
+    
+    font-size: 16px;
+}
+header{
+    
+    grid-area: 1 / 1 / 2 / 13;
+    inline-size: 100%;
+    block-size: 20vw;
+    display: grid;
+    grid-template-rows: 20vw;
+    grid-template-columns: 25% 75%;
+}
+.gradientContainer{
+    block-size: 20vw;
+    
+    justify-items: center;
+    background: transparent;
+    margin-top: 0vw;
+    z-index:2;
+    color:yellow;
+  }
+  .gradientBackground{
+   /* background: linear-gradient(90deg,black, black, rgb(51, 15, 143), black, rgb(7, 192, 205), rgb(7, 206, 83), rgb(16, 191, 226), rgb(168, 14, 202), rgb(15, 3, 122), rgb(12, 75, 163), rgb(16, 191, 226), rgb(11, 11, 154) );*/
+   inline-size: 100%;
+   background: url("../afbeeldingen/gaswolk1-768.jpg");
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    animation: kleurLetters 20s linear infinite;
+    text-align: center;
+    
+    
+    
+  }
+  @keyframes kleurLetters{
+    0%{
+      background-position: 10% 50%;
+    }
+    50%{
+      background-position: 190% 50%;
+    }
+    100%{
+      background-position: 10% 50%;
+    }
+}
+header > div:first-child{
+    background-image: url("../afbeeldingen/raket1-768.jpg");
+    background-size: cover;
+}
+header > div:nth-child(2){
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+h2{
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--secondkleur);
+    font-family: 'Sofia';
+}
+header > picture > img{
+    inline-size: 100%;
+    block-size: 20vw;
+}
+
+nav{
+    grid-area: 2 / 1 / 3 / 13;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(11, 1fr);
+}
+a{
+    text-decoration: none;
+}
+.mobileContainer{
+    grid-area: 1 / 6 / 2 / 7;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+.mobileContainer > .lijst{
+    position: absolute;
+    display: none;
+    
+    inline-size: 100%;
+}
+.dropdown{
+    inline-size: 5vw;
+    block-size: 5vw;
+    align-self: center;
+    justify-self: center;
+}
+.mobileContainer:hover{
+    color: aqua;
+}
+.mobileContainer:hover > .lijst{
+    display: block;
+
+}
+.mobileContainer > .lijst > a{
+    inline-size: 20vw;
+    padding-block: 1vw 1vw;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    background: var(--background);
+}
+.mobileContainer > .lijst > a:hover{
+    border: 2px aqua solid;
+}
+.mobileContainer > .lijst > a:active{
+    background: aqua;
+    color: black;
+}
+.menu{
+    display: none;
+    grid-area: 1 / 1 / 2 / 12;
+    background: var(--background);
+}
+nav > ul > li{
+    flex: auto;
+    display: flex;
+    margin-top: 0;
+}
+.hoofdContainer{
+    inline-size: 100%;
+    display: inline-block;
+    position: relative;
+}
+.hoofdContainer > li:nth-child(2){
+    display: none;
+    inline-size: 100%;
+}
+.hoofdContainer:hover > li:nth-child(2){
+    display: block;
+    position: absolute;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hoofdContainer > li:first-child > a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    border-right: 1px white solid;
+    border: 2px solid rgb(48, 48, 221);
+    padding-block: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+#laatste{
+    border-right: none;
+}
+.hoofdContainer > li:nth-child(2) > a{
+    inline-size: 100%;
+    color: white;
+    padding-block: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 221);
+    display: block;
+    inline-size: 100%;
+    background:rgb(48, 48, 221);
+    border-bottom: 1px solid white;
+}
+header > picture > img{
+    inline-size: 100%;
+    block-size: 20vw;
+}
+.mobileContainer a{
+    padding-block: 1vw 1vw;
+}
+.hoofdContainer > li:nth-child(2) > a:last-child{
+    border-bottom: 1px solid rgb(48, 48, 221);
+}
+.hoofdContainer > li:nth-child(2) > a:last-child:hover{
+    border-bottom: 2px solid aqua;
+}
+nav > ul .hoofdContainer > li > a:hover{
+    border: 2px aqua solid;
+    color:white;
+}
+.hoofdContainer > li > a:active{
+    background: aqua;
+    color: black;
+}
+img{
+    inline-size:100%;
+    block-size: auto;
+}
+header > picture > img{
+    inline-size: 100%;
+    block-size: 20vw;
+}
+main{
+    grid-area: 3 / 1 / 4 / 13;
+    grid-template-rows: auto auto;
+    grid-template-columns: 90%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(13, 1fr);
+}
+/*.do-flip{
+    transform: rotateY(180deg);
+}*/
+section:first-child{
+    grid-area: 1 / 2 / 2 / 13;
+    inline-size: 100%;
+}
+section:first-child > ul{
+    inline-size: 80%;
+    block-size: auto;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-block-end: 1rem;
+    margin-inline: 10% 10%;
+}
+section:first-child > div{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+section:first-child > p{
+    margin-inline: 3rem 3rem;
+}
+section:first-child > div > div img{
+    inline-size: 100%;
+    block-size: auto;
+}
+.extraNav > li > a{
+    inline-size: 30vw;
+    display: block;
+    padding-block: 1vw 1vw;
+    text-align: center;
+    background: linear-gradient(purple, rgb(46, 46, 211));
+    color: white;
+    border: 2px solid purple;
+}
+section:first-child > ul > li > a:hover{
+    border: 2px white solid;
+}
+  
+
+section:first-child > div:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 1vw;
+    margin-top: 1rem;
+}
+.extraNav > li > a:active{
+    background: rgb(155, 41, 155);
+}
+.plaatje{
+    /* inline-size: 70vw;
+     block-size: 110vw;*/
+     margin:auto auto;
+ }
+ .plaatje > div{
+    inline-size: 70vw;
+    block-size: 110vw;
+   
+    position: relative;
+    border:1rem solid var(--basiskleur);
+    /*inline-size: 100%;
+    block-size: 100%;*/
+    text-align: center;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    
+  }
+  .voorkant{
+    position: absolute;
+    display: grid;
+    inline-size: 100%;
+    block-size: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .voorkant > div{
+    background-color: darkslategrey;
+    grid-area: 2 / 1 / 4 / 2;
+    box-sizing: border-box;
+    padding-inline: 0.2rem;
+}
+.voorkant > picture{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: darkslategrey;
+}
+.achterkant > div{
+    inline-size: 100%;
+    block-size: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    background-color: darkslategrey;
+    box-sizing: border-box;
+}
+.achterkant{
+    inline-size: 100%;
+    block-size: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    background-color: var(--basiskleur);
+    transform: rotateY(180deg);
+}
+.plaatje > div > div > div{
+    display:flex;
+    flex-direction: column;
+}
+.plaatje > div > div > div > p{
+    flex:1;
+    margin-inline: 0.5rem;
+}
+.knop{
+    inline-size: 20vw;
+    block-size: auto;
+    
+   /* min-width: 70px;
+    min-block-size: 55px;*/
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(45deg,var(--knopkleur) 50%, white, var(--knopkleur));
+    background-size: 400%;
+    margin-inline:auto auto;
+    box-shadow: 0px 10px 5px black;
+    position:relative;
+    animation: steam 20s linear infinite;
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+    padding-block: 1vw 1vw;
+    border-radius: 3%;;
+    color: white;
+    transform: translateY(4px);
+        
+   
+}
+.knop:hover{
+    border-color: orange;
+    border-style: solid;
+}
+.knop:active{
+    background-color: rgb(183, 65, 183);
+    box-shadow: 0px 6px black;
+}
+.Flip{
+    transform: rotateY(180deg);
+}
+  section:nth-child(2){
+    grid-area: 2 / 2 / 3 / 12;
+    display: flex;
+    flex-direction: column;
+  }
+  section:nth-child(2) > p{
+    margin-inline: 1rem 1rem;
+  }
+  section:nth-child(2) > table{
+    margin-inline: auto auto;;
+  }
+  table  td, table th{
+    border-color: var(--secondkleur);
+    border-style: solid;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  /*section:first-child > div > div:first-child > div > div:nth-child(2) > div > p > a{
+    margin-top: 1rem;
+    inline-size: 45%;
+    block-size: auto;
+    background: linear-gradient(45deg, var(--basiskleur) 50%, white, var(--basiskleur));
+    background-size: 400%;
+    background-color: var(--basiskleur);
+    text-decoration: none;
+    border-color: black;
+    border-style: solid;
+    margin: auto auto;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 5px 20px var(--secondkleur);
+    margin-bottom: 1rem;
+  }
+  section:first-child > div > div:first-child > div > div:nth-child(2) a:active{
+    transform: translateY(4px);
+    box-shadow: 0px 5px 5px var(--secondkleur);
+
+  }*/
+  footer{
+    block-size: 10vw;
+    grid-area: 4 / 1 / 5 / 13;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-rows: 10vw;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background: var(--background);
+}
+footer > a{
+    grid-area: 1 / 1 / 2 / 2;
+}
+footer > p{
+    grid-area: 1 / 2 / 2 / 3; 
+}
+  @keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+    @media screen and (min-width: 768px){
+        body{
+         font-size: 18px;
+        }
+        header > div:nth-child(2){
+            font-size: 60px;
+        }
+        .mobileContainer{
+            display: none;
+        }
+        .menu{
+            inline-size: 100%;
+            display: block;
+            flex-direction: row;
+        }
+        nav > ul:nth-child(1){
+            display: flex;
+        }
+      
+       .extraNav > li > a{
+        inline-size: 20vw;
+       }
+
+      /* .plaatje{
+        inline-size: 40vw;
+        block-size: 80vw;
+    }*/
+    /*section:first-child > div{
+        inline-size: 100%;
+        justify-items: center;
+        align-items: center;
+        display:flex;
+        
+        flex-direction: column;
+    }*/
+    /*section:first-child > div > div:nth-child(2) {
+        flex-direction: row-reverse;
+    }*/
+      
+       
+    
+    .plaatje > div{
+        inline-size: 40vw;
+        block-size: 70vw;
+        
+        position: relative;
+        border:1rem solid var(--basiskleur);
+        /*inline-size: 100%;
+        block-size: 100%;*/
+        text-align: center;
+        -o-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        -o-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        box-sizing: border-box;
+        
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        font-size: 20px;
+    }
+    nav > ul > li:first-child > div:first-child{
+        font-size: 24px;
+       }
+       nav > ul > li:first-child > div:nth-child(3){
+        font-size: 24px;
+       }
+ 
+  /*@media screen and (min-width: 1440px){
+    .plaatje{
+        inline-size: 60vw;
+        block-size: 30vw;
+        max-inline-size: 1024px;
+        max-block-size: 512px;
+        font-size: 20px;
+    }
+    section:first-child > div > div:nth-child(odd) .voorkant > picture{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    section:first-child > div > div:nth-child(odd) > div > div{
+        grid-area: 2 / 1 / 4 / 3;
+    }
+    section:first-child > div > div:nth-child(even)  .voorkant > picture{
+        grid-area: 1 / 1 / 2 / 3;
+        background-color: green;
+    }
+    section:first-child > div > div:nth-child(even) > div > div{
+        grid-area: 2 / 1 / 4 / 3;
+    }
+    section:first-child > div > div > div > div:nth-child(1){
+        column-gap: 1rem;
+        display: grid;
+    }
+    section:first-child > div > div > div > div:nth-child(1) > div{
+        grid-area: 1 / 2 / 4 / 3;
+        display: grid;
+        justify-items: center;
+    }
+    section:first-child > div > div button{
+        inline-size:12vw;
+        block-size: 6vw;
+    }   
+    #knopVA{
+        inline-size: 12vw;
+        block-size: 6vw;;
+    }
+    section:first-child > div > div picture > img{
+        object-fit: cover;
+
+    }
+}*/
+}
+@media screen and (min-width: 1440px){
+/*.plaatje{
+    inline-size: 20vw;
+    block-size: 30vw;
+}*/
+.plaatje > div{
+    inline-size: 30vw;
+    block-size: 50vw;
+}
+}

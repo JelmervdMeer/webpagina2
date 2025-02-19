@@ -1,0 +1,518 @@
+:root{
+    --basiskleur:rgb(7, 79, 172);
+    --secondkleur:aqua;
+    --knopkleur:purple;
+    --pseudokleur: green;
+    --background:Radial-gradient( rgb(7, 79, 172), rgb(0, 0, 51));
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: black;
+    color: white;
+    border-color:  var(--basiskleur);
+    border-style: solid;
+    font-size: 16px;
+}
+
+nav{
+    grid-area: 2 / 1 / 3 / 13;
+}
+header{
+    
+    grid-area: 1 / 1 / 2 / 13;
+    inline-size: 100%;
+    block-size: 20vw;
+    display: grid;
+    grid-template-rows: 20vw;
+    grid-template-columns: 25% 75%;
+}
+.gradientContainer{
+    block-size: 20vw;
+    
+    justify-items: center;
+    background: transparent;
+    margin-top: 0vw;
+    z-index:2;
+    color:yellow;
+  }
+  .gradientBackground{
+   /* background: linear-gradient(90deg,black, black, rgb(51, 15, 143), black, rgb(7, 192, 205), rgb(7, 206, 83), rgb(16, 191, 226), rgb(168, 14, 202), rgb(15, 3, 122), rgb(12, 75, 163), rgb(16, 191, 226), rgb(11, 11, 154) );*/
+   inline-size: 100%;
+   background: url("../afbeeldingen/gaswolk1-768.jpg");
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    animation: kleurLetters 20s linear infinite;
+    text-align: center;
+    
+    
+    
+  }
+  @keyframes kleurLetters{
+    0%{
+      background-position: 10% 50%;
+    }
+    50%{
+      background-position: 190% 50%;
+    }
+    100%{
+      background-position: 10% 50%;
+    }
+}
+header > div:first-child{
+    background-image: url("../afbeeldingen/raket1-768.jpg");
+    background-size: cover;
+}
+header > div:nth-child(2){
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+h2{
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--secondkleur);
+    font-family: 'Sofia';
+}
+nav{
+    grid-area: 2 / 1 / 3 / 13;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(11, 1fr);
+}
+a{
+    text-decoration: none;
+}
+.mobileContainer{
+    grid-area: 1 / 6 / 2 / 7;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+.mobileContainer > .lijst{
+    position: absolute;
+    display: none;   
+    inline-size: 100%;
+}
+.dropdown{
+    inline-size: 5vw;
+    block-size: 5vw;
+    align-self: center;
+    justify-self: center;
+}
+.mobileContainer:hover{
+    color: aqua;
+}
+.mobileContainer:hover > .lijst{
+    display: block;
+}
+.mobileContainer > .lijst > a{
+    inline-size: 20vw;
+    padding-block: 1vw 1vw;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    background: var(--background);
+}
+.mobileContainer > .lijst > a:hover{
+    border: 2px aqua solid;
+}
+.mobileContainer > .lijst > a:active{
+    background: aqua;
+    color: black;
+}
+.menu{
+    display: none;
+    grid-area: 1 / 1 / 2 / 12;
+    background: var(--background);
+}
+nav > ul > li{
+    flex: auto;
+    display: flex;
+    margin-top: 0;
+}
+.hoofdContainer{
+    inline-size: 100%;
+    display: inline-block;
+    position: relative;
+}
+.hoofdContainer > li:nth-child(2){
+    display: none;
+    inline-size: 100%;
+}
+.hoofdContainer:hover > li:nth-child(2){
+    display: block;
+    position: absolute;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hoofdContainer > li:first-child > a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    border-right: 1px white solid;
+    border: 2px solid rgb(48, 48, 221);
+    padding-block: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+#laatste{
+    border-right: none;
+}
+.hoofdContainer > li:nth-child(2) > a{
+    inline-size: 100%;
+    color: white;
+    padding-block: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 221);
+    display: block;
+    inline-size: 100%;
+    background:rgb(48, 48, 221);
+    border-bottom: 1px solid white;
+}
+header > picture > img{
+    inline-size: 100%;
+    block-size: 20vw;
+}
+
+.mobileContainer a{
+    padding-block: 1vw 1vw;
+}
+.hoofdContainer > li:nth-child(2) > a:last-child{
+    border-bottom: 1px solid rgb(48, 48, 221);
+}
+.hoofdContainer > li:nth-child(2) > a:last-child:hover{
+    border-bottom: 2px solid aqua;
+}
+nav > ul .hoofdContainer > li > a:hover{
+    border: 2px aqua solid;
+    color:white;
+}
+.hoofdContainer > li > a:active{
+    background: aqua;
+    color: black;
+}
+header > picture > img{
+    inline-size: 100%;
+    block-size: 20vw;
+}
+img{
+    inline-size:100%;
+    block-size: auto;
+}
+section:nth-child(2) img{
+    border-color: var(--basiskleur);
+    border-style: solid;
+}
+main > article:first-child{
+    grid-area: 1 / 2 / 2 / 24;
+    display:flex;
+    box-shadow: 1vw 1vw 3vw rgb(7, 79, 172);
+    padding-inline: 2rem 2rem;;
+    margin-top: 1rem;
+    block-size: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-block-end: 2rem;
+}
+p{
+    margin-inline-start: 1rem;
+}
+p + p{
+    margin-top: 1rem;
+}
+main{
+    grid-area: 3 / 1 / 4 / 13;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(24, 1fr);
+    row-gap: 2rem;
+}
+.animatieZon{
+    inline-size: 60vw;
+    block-size: 40vw;
+    background-size: cover;
+    background-image: url("../afbeeldingen/melkweg2-1920.jpg");
+    position:relative;
+    display:block;
+    margin-right: 1rem;
+    align-self:center;
+}
+.aarde{
+    inline-size: 5vw;
+    block-size: 5vw;
+    position:absolute;
+    left: 80%;
+    top: 40%;
+    border-radius: 50%;
+    background-image: url("../afbeeldingen/pxfuel\ \(2\).jpg");
+    background-size: 8.5vw 5vw;
+    animation: globe 16s linear infinite;
+    z-index: 2;
+}
+@keyframes globe{
+    0% {
+		background-position: 5vw 0vw;
+        transform: scale(1);
+        left: 80%;
+	}
+	100% {
+		background-position: 8vw 0vw;
+        transform: scale(4);
+        left: 20%;
+	}
+}
+main > article:first-child > div > div:nth-child(2){
+    inline-size:10vw;
+    block-size: 10vw;
+    position:absolute;
+    left: 20%;
+    top:40%;
+    border-radius: 50%;
+    background-image: url("../afbeeldingen/zon1-1920.jpg");
+    background-size: 30vw 20vw;
+    animation: sun 16s linear infinite;
+    z-index: 0;
+    grid-area: 1 / 2 / 2 / 24;
+}
+h2{
+    text-shadow: 5px 5px 2px aqua;
+}
+@keyframes sun{
+	0% {
+		background-position: 0 0;
+        box-shadow: 0px 0px 110px 110px rgb(255, 255, 0, 0.5);
+	}
+	80% {
+        box-shadow: 0px 0px 110px 110px rgb(255, 255, 0, 0.5);
+	}
+   85%{
+        box-shadow: 0px 0px 10px 2px rgb(255, 255, 0, 0.5);
+    }
+    100%{
+        background-position: 28vw;
+        box-shadow: 0px 0px 10px 2px rgb(255, 255, 0, 0.5);
+    }
+}
+
+article:nth-child(2){
+    grid-area: 2 / 2 / 3 / 24;
+    block-size: auto;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: 1vw 1vw 3vw rgb(7, 79, 172);
+    padding-inline: 2rem 2rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+article:nth-child(3){
+    grid-area: 3 / 2 / 4 / 24;
+    block-size: auto;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: 1vw 1vw 3vw rgb(7, 79, 172);
+    padding-inline: 2rem 2rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+} 
+article > a{
+    inline-size: 45%;
+    block-size: auto;
+    background: linear-gradient(45deg, var(--knopkleur), var(--knopkleur), white, var(--knopkleur), var(--knopkleur));
+    background-size: 400%;
+    text-decoration: none;
+    border-color: black;
+    border-style: solid;
+    margin: auto auto;
+    text-align: center;
+    color: white;
+    animation: glans 30s linear infinite;
+    margin-bottom: 1rem;
+    box-shadow: 0px 1px 10px rgba(138, 27, 138, 0.5);
+}
+article > a:active{
+    transform: translateY(4px);
+    
+}
+article > a:hover{
+    border-color: green;
+}
+article:nth-child(2) > a{
+    grid-area: 3 / 1 / 4 / 2;
+}
+article:nth-child(3) > a{
+    grid-area: 3 / 1 / 4 / 2;
+}
+article a{
+    border-radius: 5%;
+    padding-block: 0.5rem;
+}
+article > a:active{
+    transform: translateY(4px);
+    box-shadow: 3px 1px 10px 1px var(--secondkleur);
+}
+aside > div > img{
+    border-bottom: 10px solid black;
+    transform: translateY(5px);
+}
+article > a:hover{
+    border-color: var(--basiskleur);
+    border-style: solid;
+}
+@keyframes glans {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+aside:nth-child(4){
+    block-size: auto;
+    grid-area: 4 / 2 / 5 / 24;
+    box-shadow: 1vw 1vw 3vw rgb(7, 79, 172);
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding-inline: 2rem 2rem;
+    padding-block-end: 2rem;
+}
+aside > p {
+    padding-inline: 1rem 1rem;
+}
+#hubbleContainer{
+    inline-size: 100%;
+    position: relative; 
+}
+#hubbleContainer > img{
+    inline-size: 10vw;
+    block-size: 5.95vw;
+    position:absolute;
+    right: 10vw;
+    top: 50%;
+}
+#opstartProblemen > img:nth-child(3){
+    inline-size: 10vw;
+    block-size: auto;
+
+}
+@keyframes hubble{
+    0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 200% 0%;
+	}
+}
+footer{
+    block-size: 10vw;
+    grid-area: 4 / 1 / 5 / 13;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-rows: 10vw;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background: var(--background);
+}
+footer > a{
+    grid-area: 1 / 1 / 2 / 2;
+}
+footer > p{
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+    @media screen and (min-width: 768px){
+        body{
+         font-size: 18px;
+        }
+        header > div:nth-child(2){
+            font-size: 60px;
+        }
+        .mobileContainer{
+            display: none;
+        }
+        .menu{
+            inline-size: 100%;
+            display: block;
+            flex-direction: row;
+        }
+        nav > ul:nth-child(1){
+            display: flex;
+        }
+     
+    }
+
+    @media screen and (min-width: 1024px){
+        body{
+            font-size: 20px;
+        }
+        nav > ul > li:first-child > div:first-child{
+            font-size: 24px;
+        }
+           nav > ul > li:first-child > div:nth-child(3){
+            font-size: 24px;
+        }
+        main{
+            padding: 1rem;
+        }
+        main > article:nth-child(1){
+            grid-area: 1 / 1 / 2 / 17;
+            block-size: 100%;
+            inline-size: 100%;    
+        }
+        main > article:nth-child(1) > div{
+            inline-size: 60vw;
+            block-size: 40vw;
+        }
+        article:nth-child(2){
+            /*inline-size: 48%;*/
+           /* box-sizing: border-box;*/
+            grid-area: 2 / 1 / 3 / 8;
+            margin-right: 1rem;
+        }
+       /*section:nth-child(2){
+            grid-area: 2 / 2 / 3 / 18 ;
+            flex-direction: row;
+            column-gap: 1rem;
+        }*/
+        article:nth-child(3){
+           /*/ inline-size: 48%;*/
+            grid-area: 2 / 9 / 3 / 17;
+        }
+        aside:nth-child(4){
+            grid-area: 1 / 18 / 3 / 25;
+            display: grid;
+            box-sizing: border-box;
+            margin-left: 0.5rem;
+            padding-inline: 1rem 1rem;
+            align-content:start;
+            align-items: center;
+        }      
+    }
+   /* @media screen and (min-width: 1440px)*/

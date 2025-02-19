@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Objecten</title>
+    <link rel="stylesheet" href="css/objectencss.css">
+    <link rel="fonts" href='https://fonts.googleapis.com/css?family=Sofia'>
+</head>
+<body>
+   <!--<script src="javascript/Jobjecten.js"></script>-->
+    <header>
+        <div></div>
+        <div class="gradientContainer">
+            <div class="gradientBackground">SPHERES AND DUST</div>
+        </div> 
+    </header>>
+    <nav>
+        <ul class="menu">
+            <li class="Homecontainer">
+                <ul class="hoofdContainer">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="lijst" id="lijstHome">
+                        <a href='index.htm#heelal'>Heelal</a>
+                        <a href="index.htm#foto">Foto's</a>
+                    </li>
+                </ul>                  
+            </li>
+            <li class="Telecontainer">
+                <ul class="hoofdContainer">
+                    <li><a href="telescopen.html">Telescopen</a></li>
+                    <li class="lijst">
+                        <a href="telescopen.htm#telescopen">Telescopen</a>
+                        <a href="telescopem.htm#welke">Welke</a>
+                        <a href="telescopen.htm#opstartproblemen">Opstartproblemen</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="Objectcontainer">
+                <ul class="hoofdContainer">
+                    <li><a href="Object.html">Objecten</a></li>
+                    <li class="lijst">
+                        <a href="Object.htm#objecten">Objecten</a>
+                    </li>
+                </ul>
+            </li>
+        </ul> 
+        <ul class="mobileContainer"> 
+            <li class="dropdown">&#9776;</li>
+            <li class="lijst">
+                <a href= "index.html">Home</a>
+                <a href="telescopen.html">Telescopen</a>
+                <a href="Object.html">Objecten</a>
+                <a href="mystery.html">Mysteries</a>
+            </li>
+        </ul>              
+    </nav>
+    <main>
+        <section id="objecten">
+            <h2>Objecten in de ruimte</h2>
+            <p> Er zijn al veel verschillende objecten waargenomen in het heelal. Hieronder wordt een overzicht gegeven  van
+                de belangrijkste ruimteobjecten, hoe ze zijn ontstaan en hoe groot ze zijn. Kijk op de achterkant van de kaartjes voor
+                leuke feitjes betreffende het object. 
+            </p>
+            <ul class="extraNav">
+                
+                <li><a href="#Ruimtenevel">Ruimtenevel</a></li>
+                <li><a href="#Planeten">Planeten</a></li>
+                <li><a href="#Sterren">Sterren</a></li>
+                <li><a href="#Meteorieten">Meteorieten</a></li>
+                <li><a href="#Kometen">Kometen</a></li>
+                <li><a href="#Manen">Manen</a></li>
+                <li><a href="#Zwarte-gaten">Zwarte gaten</a></li>
+            </ul>
+            <div>
+                <div class="plaatje" id="Ruimtenevel">
+                    <div class="flipkaartBinnen" id="ruimteNevel">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/gaswolk1-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/gaswolk1-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/gaswolk1-1024.jpg">
+                                <source media="(max-width:1440px)" srcset="afbeeldingen/gaswolk1-1440.jpg">
+                                <source srcset="afbeeldingen/gaswolk1-1920.jpg">
+                                <img src="afbeeldingen/gaswolk1-1024v.jpg" alt="ruimtenevel">
+                            </picture>
+                            <div>
+                                <h3>Ruimtenevel</h3>
+                                <p>                                                              
+                                    Ruimtenevels worden beschouwd als de plaats waar nieuwe sterren gevormd worden. Ook worden nevels gevormd 
+                                    uitgesloten van een ster die afsterft. Er zijn dus verschillende soorten nevels: emissienevels, reflecterende 
+                                    nevels, planetaire nevels, donkere nevels en Wolf Rayonnevels. 
+                                </p>
+                                <button class="knop" id="knopVaRuimtenevel" onclick="Draaien1()">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Wist u dat de grootste ruimtenevels wel enkele honderden lichtjaren groot kunnen zijn? 
+                                </p>
+                                <button class="knop" id="knopAvRuimtenevel">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="Planeten">
+                    <div class="flipkaartBinnen" id="planeten">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/exoplaneet_320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/exoplaneet_768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/exoplaneet_1024.jpg">
+                                <source media="(nax-width:1440px)" srcset="afbeeldingen/exoplaneet_1440.jpg">
+                                <source srcset="afbeeldingen/exoplaneet_1920.jpg">
+                                <img src="afbeeldingen/exoplaneet_1024/.jpg" alt="planeet">
+                            </picture>
+                            <div>
+                                <h3>(exo)Planeten</h3>
+                                <p>                                                              
+                                    Een planeet is een hemellichaam dat zich om zijn ster heen beweegt. Een planeet heeft 
+                                    genoeg massa om een ronde vorm te benaderen. Deze heeft echter te weinig massa om tot kernfusie 
+                                    in het binnenste van de planeet te leiden, zoals bij sterren. De planeten buiten ons zonnestelsel worden exo-planeten genoemd. 
+                                </p>
+                                <button class="knop" id="knopVaPlaneten">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Wist u dat er veel exo-planeten zijn waar voor onze aardse begrippen zeer extreme omstandigheden 
+                                    gelden. Zo bestaat er bijvoorbeeld een exo-planeet die volledig uit diamant bestaat (55 Canri-e). Een jaar 
+                                    op deze exo-planeet duurt slechts 18 uren. 
+                                    Maar het kan nog sneller. PSR J1719-14-b draait rond een pulsar (Roterende neutronenster)en doet dit in slechts 
+                                    2 uur. Ook is elke kleur aanwezig onder de exo-planeten. Zo bestaat er ook een roze exo-planeet. GJ504b is roze  
+                                    omdat ze nog nagloeit van de warmte die vrijkomt bij het ontstaan van een planeet.  
+                                    En zo zijn er nog een heleboel extreme exo-planeten. 
+                                </p>
+                                <button class="knop" id="knopAvPlaneten">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="Sterren">
+                    <div class="flipkaartBinnen" id="sterren">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/zon1-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/zon1-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/zon1-1024.jpg">
+                                <source srcset="afbeeldingen/zon1-1920.jpg">
+                                <img src="afbeeldingen/zon1-1024.jpg" alt="Ster">
+                            </picture>
+                            <div>
+                                <h3>Sterren</h3>
+                                <p>
+                                    Een ster is een hemellichaam dat voor 72% bestaat uit waterstof, waarin de druk en 
+                                    temperatuur zo hoog zijn dat er kernfusie plaatsvindt. 
+                                </p>
+                                <button class="knop" id="knopVaSterren">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Wist je dat er meer sterren zijn dan zandkorrels op de aarde? Het aantal zandkorrels wordt geschat op 100 Triljoen. 
+                                    Dit is een 1 met 20 nullen. Het aantal sterren in het waarneembare heelal is nog eens 100 x zoveel. Rond 
+                                    deze sterren draaien ook nog eens (exo)Planeten. We hebben als mensheid dus erg veel te onderzoeken. 
+                                </p>
+                                <button class="knop" id="knopAvSterren">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="Meteorieten">
+                    <div class="flipkaartBinnen" id="meteorieten">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/meteoriet-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/meteoriet-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/meteoriet-1024.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/meteoriet-1440.jpg">
+                                <source srcset="afbeeldingen/meteoriet-1920.jpg">
+                                <img src="afbeeldingen/meteoriet-1024.jpg" alt="Meteoriet">
+                            </picture>
+                            <div>
+                                <h3>Meteorieten</h3>
+                                <p>
+                                    Een meteoriet is een deel van een meteoroïde of planetoïde die door de dampkring komt. Door het opwarmen  
+                                    van dit object kan de meteoriet zichtbaar worden. Vandaar dat een meteoriet ook wel een vallende ster wordt  
+                                    genoemd. 
+                                </p>
+                                <button class="knop" id="knopVaMeteorieten">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Wist je dat een meteoriet ons veel kan leren over andere planeten? Enkele meteorieten zijn afkomstig van de maan, Maar 
+                                    er zijn ook al meteorieten gevonden afkomstig van Mars. De meeste komen echter uit de planetoïde gordel tussen Mars en 
+                                    Jupiter. Meestal komt er bij het binnendringen van een meteoriet in onze dampkring helemaal geen inslag op de grond  
+                                    omdat de meteoriet volledig verdampt. 
+                                </p>
+                               <button class="knop" id="knopAvMeteorieten">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="Kometen">
+                    <div class="flipkaartBinnen" id="kometen">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/komeet-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/komeet-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/komeet-1024.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/komeet-1440.jpg">
+                                <source srcset="afbeeldingen/komeet-1920.jpg">
+                                <img src="afbeeldingen/komeet-1024.jpg" alt="Komeet">
+                            </picture>
+                            <div>
+                                <h3>Kometen</h3>
+                                <p>                                                              
+                                    Een komeet is een relatief klein hemellichaam dat vaak een elliptische baan beschrijft rond zijn ster.  
+                                    Ze bestaan uit ijs, gas en stof. De kenmerkende coma en staart wordt gevormd door sublimatie 
+                                    van een deel van de bestanddelen van de komeet als deze dicht genoeg bij zijn ster komt.             
+                                </p>
+                                <button class="knop" id="knopVaKometen">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Wist je dat een komeet een doorsnede heeft van 1 tot 50 km? Hoe kunnen we deze objecten dan zo goed waarnemen? 
+                                    Dit komt omdat de diameter van de coma die ontstaat sterk kan variëren van 100000km tot 1000000km. De staart is nog groter 
+                                    en kan een diameter bereiken van 150 miljoen km. 
+                                </p>
+                                <button class="knop" id="knopAvKometen">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="Manen">
+                    <div class=flipkaartBinnen id="manen">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/maan-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/maan-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/maan-1024.jpg">
+                                <source media="(nax-width:1440px)" srcset="afbeeldingen/maan-1440.jpg">
+                                <source srcset="afbeeldingen/maan-1920.jpg">
+                                <img src="afbeeldingen/maan-1024.jpg" alt="ruimtenevel">
+                            </picture>
+                            <div>
+                                <h3>Manen</h3>
+                                <p>
+                                    Manen draaien altijd in een baan rond hun planeet. Ons 
+                                    zonnestelsel heeft ongeveer 400 manen. Mercurius en Venus hebben  
+                                    geen manen, de Aarde heeft er slechts 1. Jupiter heeft de meeste manen, namelijk 67. Hierna volgt Saturnus met 62 manen. 
+                                </p>
+                                <button class="knop" id="knopVaManen">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Ons zonnestelsel heeft ongeveer 400 manen. Bijna al deze manen hebben 
+                                    dezelfde draairichting als de draairichting om de planeet, planetoïde of dwergplaneet zelf. Er is echter een uitzondering 
+                                    . Triton, een maan van Neptunes, draait tegengesteld aan de richting die hij om de planeet heen draait. 
+                                    Waarschijnlijk is Neptunes bij de vorming van de planeet uit zijn baan gebracht en heeft deze verschillende  
+                                    planeten meegenomen en deze zijn gefuseerd. Dit zou ook verklaren waarom Neptunes zwaarder is dan Uranus. 
+                                    Normaal gesproken liggen de zwaarste planeten het dichtstbij de zon, terwijl Neptunes verder van de zon afligt  
+                                    dan Uranus. 
+                                </p>
+                                <button class="knop" id="knopAvManen">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plaatje" id="ZwarteGaten">
+                    <div class=flipkaartBinnen id="zwarteGaten">
+                        <div class="voorkant">
+                            <picture>
+                                <source media="(nax-width:320px)" srcset="afbeeldingen/ZwartGat-320.jpg">
+                                <source media="(nax-width:768px)" srcset="afbeeldingen/ZwartGat-768.jpg">
+                                <source media="(nax-width:1024px)" srcset="afbeeldingen/ZwartGat-1024.jpg">
+                                <source media="(nax-width:1440px)" srcset="afbeeldingen/ZwartGat-1440.jpg">
+                                <source srcset="afbeeldingen/ZwartGat-1920.jpg">
+                                <img src="afbeeldingen/ZwartGat-1024.jpg" alt="ZwartGat">
+                            </picture>
+                            <div>
+                                <h3>Zwarte gaten</h3>
+                                <p>
+                                    Zwarte gaten hebben een oneindige hoeveelheid zwaartekracht op een oneindig klein oppervlak. Ze ontstaan uit hele grote sterren op het moment 
+                                    dat deze uitdoven. Een foto maken van een zwart gat is onmogelijk omdat alles dat dicht genoeg bij het gat komt wordt  
+                                    opgeslokt, zelfs licht.
+                                </p>
+                                <button class="knop" id="knopVaZG">Wist u dat?</button>
+                            </div>
+                        </div>
+                        <div class="achterkant">
+                            <div>
+                                <p>
+                                    Sterrenhopen zijn groepen sterren die ongeveer dezelfde leeftijd hebben, Er zijn echter sterrenhopen aangetoond waarin heel veel oude sterren zitten en een paar hele jonge sterren. 
+                                    De enigste theorie die logisch is zegt dat de jonge sterren door een zwart gat zijn gegaan en zich zo bij de oudere sterren hebben gevoegd. 
+                                    Wist u dat er een woord bestaat voor alles wat te dicht bij een Zwart Gat in de buurt komt: spaghettification. Door het extreme verschil in zwaartekracht wordt het object uitgerekt tot een sliert 
+                                </p>
+                                <button class="knop" id="knopAvZG">flip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Opeenhoping">
+            <h2> Opeenhoping</h2>
+            <p>
+                In het heelal worden ook een aantal opeenhopingen waargenomen. Clusters worden gevormd door verschillende sterrenstelsels. Het cluster waar onze Melkweg behoort heet de Lokale Groep. Deze Lokale Groep  
+                maakt deel uit van de Canes Venaticiwolk. Deze vormt samen met het Vertiocluster en enkele andere clusters Het Virgio supercluster of het Lokale superscluster. Deze is 115 miljoen lichtjaar lang en bevat meer dan 10000 sterrenstelsels  
+                Het Vertio supercluster vormt op zijn beurt weer een veel grotere supercluster. En zo zijn er nog veel meer superclusters Tussen deze superclusters zijn geen sterrenstelsels te vinden. In de volgende tabel staat een overzicht. 
+            </p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Omschrijfing</th>
+                </tr>
+                <tr>
+                    <th>Sterrenstelsel</th>
+                    <td> Een sterrenstelsel is een groot aantal planetenstelsels die bij elkaar worden gehouden door hun eigen zwaarte
+                        kracht.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Clusters</th>
+                    <td>Een cluster is een verzameling van sterrenstelsels die bij elkaar worden gehouden door hun eigemn zwaartekracht.</td>
+                </tr>
+                <tr>
+                    <th>Superclusters</th>
+                    <td>Een supercluster is een verzameling clusters die bij elkaar worden gehouden door hun eigen zwaartekracht</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Jelmer van der Meer<br>
+            jelmervandermeer02@gmail.com
+        </p>
+        
+        <a 
+            href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" >
+        </a>
+    </footer>
+    <script>
+        const kaart1 =document.getElementById("ruimteNevel");
+            kaart1.addEventListener("click", Flip);
+            function Flip(){
+                kaart1.classList.toggle("Flip");
+            }
+            const kaart2 =document.getElementById("planeten");
+            kaart2.addEventListener("click", Flip2);
+            function Flip2(){
+                kaart2.classList.toggle("Flip");
+            }
+            const kaart3 =document.getElementById("sterren");
+            kaart3.addEventListener("click", Flip3);
+            function Flip3(){
+                kaart3.classList.toggle("Flip");
+            }
+            const kaart4 =document.getElementById("meteorieten");
+            kaart4.addEventListener("click", Flip4);
+            function Flip4(){
+                kaart4.classList.toggle("Flip");
+            }
+            const kaart5 =document.getElementById("kometen");
+            kaart5.addEventListener("click", Flip5);
+            function Flip5(){
+                kaart5.classList.toggle("Flip");
+            }
+            const kaart6 =document.getElementById("manen");
+            kaart6.addEventListener("click", Flip6);
+            function Flip6(){
+                kaart6.classList.toggle("Flip");
+            }
+            const kaart7 =document.getElementById("zwarteGaten");
+            kaart7.addEventListener("click", Flip7);
+            function Flip7(){
+                kaart7.classList.toggle("Flip");
+            }
+    </script>
+</html>
+
+
+
+
+
+
+
+
+             
+                
+            
+       
