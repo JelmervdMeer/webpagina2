@@ -77,8 +77,7 @@
                 ze zijn ontstaan en wat er uiteindelijk mee gaat gebeuren.  
                 In de loop der jaren zijn er prachtige foto's gemaakt van bijna al deze objecten. 
                  Prachtige kleuren tegen een achtergrond van diep 
-                zwart. Veel zaken die besproken worden zorgen natuurlijk ook 
-                voor verschillende meningen hierover. 
+                zwart. 
             </p>
             <p>
                 &#128065; Wij mensen hebben vooral veel geleerd over het heelal 
@@ -145,10 +144,11 @@
                     <img src="afbeeldingen/sateliet1-1024.jpg">
                     <h3>Telescopen</h3>
                     <p>
-                        Door de telescoop en dan in het biojzonder de ruimtetelescoop heeft ons heel veel geleerd over het heelal. Druk op onderstaande knop als je meer wilt weten over deze 
-                        over telescopen.
+                        De telescoop en dan in het bijzonder de ruimtetelescoop heeft ons heel veel geleerd over het heelal. Druk op onderstaande knop als je meer wilt weten over
+                        telescopen.
                     </p>
-                    <a>Telescopen</a>
+                    
+                    <a id="knopOnderwerpTele">Telescopen</a>
                 </div>
                 <div class="onderwerp">
                     <img src="afbeeldingen/exoplaneet_1024.jpg">
@@ -177,43 +177,11 @@
         </a>
     </footer>
     <script>
-        
-        
-            const kaart1 =document.getElementById("ruimteNevel");
-            kaart1.addEventListener("click", Flip);
-            function Flip(){
-                kaart1.classList.toggle("Flip");
-            }
-            const kaart2 =document.getElementById("planeten");
-            kaart2.addEventListener("click", Flip2);
-            function Flip2(){
-                kaart2.classList.toggle("Flip");
-            }
-            const kaart3 =document.getElementById("sterren");
-            kaart3.addEventListener("click", Flip3);
-            function Flip3(){
-                kaart3.classList.toggle("Flip");
-            }
-            const kaart4 =document.getElementById("meteorieten");
-            kaart4.addEventListener("click", Flip4);
-            function Flip4(){
-                kaart4.classList.toggle("Flip");
-            }
-            const kaart5 =document.getElementById("kometen");
-            kaart5.addEventListener("click", Flip5);
-            function Flip5(){
-                kaart5.classList.toggle("Flip");
-            }
-            const kaart6 =document.getElementById("manen");
-            kaart6.addEventListener("click", Flip6);
-            function Flip6(){
-                kaart6.classList.toggle("Flip");
-            }
-            const kaart7 =document.getElementById("zwarteGaten");
-            kaart7.addEventListener("click", Flip7);
-            function Flip7(){
-                kaart7.classList.toggle("Flip");
-            }
+          function moveElement() {
+            const element = document.getElementById('knopOnderwerpTele');
+            element.style.left = '200px'; // Move the element horizontally
+            element.style.top = '200px';  // Move the element vertically
+        }
             
   
 

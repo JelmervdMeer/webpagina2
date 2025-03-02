@@ -181,9 +181,6 @@ header > picture > img{
     inline-size: 100%;
     block-size: 20vw;
 }
-.lijst{
-  
-}
 .mobileContainer a{
     padding-block: 1vw 1vw;
 }
@@ -269,6 +266,7 @@ section:nth-child(4){
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    border: 1px solid var(--basiskleur);
     
 }
 .onderwerp > p{
@@ -291,6 +289,11 @@ section:nth-child(4){
     margin-block: auto auto;
     box-shadow: 1vw 1vw 3vw rgb(7, 79, 172);
     text-align:center;
+    transition: all 0.5s ease;
+}
+.onderwerp > a:active{
+    box-shadow: none;
+    transform: translate(0.5vw, 1vw);
 }
 h3{
     grid-area: 2 / 1 / 3 / 2;
@@ -483,10 +486,11 @@ section:nth-child(3) > div{
         flex-direction: row;
     }
     .onderwerpen{
+        inline-size: 100%;
         display: flex;
         flex-direction: row;
         column-gap: 3vw;
-        justify-content:space-between ;
+        justify-content:space-around;
     }
     .onderwerp{
         inline-size: 35vw;
@@ -497,8 +501,6 @@ section:nth-child(3) > div{
         display: grid;
         grid-template-rows: 2fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        
-        
     }
     .onderwerp > img{
         inline-size: 35vw;
